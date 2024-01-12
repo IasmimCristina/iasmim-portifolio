@@ -13,15 +13,16 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    /* Color Palette */
+    --primary: #1A0000;
+    --secondary: #ADDFDE;
+    --light-text: #819594;
+    --secondary-dark: #121e1e;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, var(--primary), var(--secondary-dark));
+
 }
